@@ -3,8 +3,8 @@
 
 Herramienta desarrollada en Bash para explorar e inspeccionar transacciones y direcciones de la red Bitcoin directamente desde la terminal. Utiliza la API oficial de Blockchain.info en formato JSON para extraer datos precisos, realizar conversiones en tiempo real a dólares (USD) y presentar la información en tablas dinámicas estructuradas.
 
-![Menú de Ayuda](ruta/a/tu/imagen_ayuda.png)
-*(Reemplaza esta ruta con la imagen de tu panel de ayuda `./btcAnalyzer.sh -h`)*
+![Menú de Ayuda](Images/help.png)
+*(Reemplaza esta ruta con la imagen de tu panel de ayuda `./bitcoinAnalyzer.sh`)*
 
 ## Características Principales
 
