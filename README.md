@@ -1,1 +1,1 @@
-# Analizardo-de-Bitcoins
+# Analizador-de-Bitcoins
