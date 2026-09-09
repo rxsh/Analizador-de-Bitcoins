@@ -29,9 +29,9 @@ sudo apt-get install curl jq awk sed
 
 Clona este repositorio y otórgale permisos de ejecución al script principal:
 ```bash
-git clone [https://github.com/tu-usuario/btcAnalyzer.git](https://github.com/tu-usuario/btcAnalyzer.git)
-cd btcAnalyzer
-chmod +x btcAnalyzer.sh
+git clone https://github.com/rxsh/Analizador-de-Bitcoins.git
+cd Analizador-de-Bitcoins
+chmod +x bitcoinAnalyzer.sh
 ```
 
 ## Uso y Modos de Exploración
