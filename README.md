@@ -25,3 +25,40 @@ El script hace uso de utilidades nativas de Linux y requiere un procesador JSON 
 En distribuciones basadas en Debian/Kali Linux, puedes instalar las dependencias faltantes con:
 ```bash
 sudo apt-get install curl jq awk sed
+
+Instalación
+
+Clona este repositorio y otórgale permisos de ejecución al script principal:
+Bash
+
+git clone [https://github.com/tu-usuario/btcAnalyzer.git](https://github.com/tu-usuario/btcAnalyzer.git)
+cd btcAnalyzer
+chmod +x btcAnalyzer.sh
+
+Uso y Modos de Exploración
+
+La herramienta funciona mediante el uso de parámetros. El modo de operación se define con la bandera -e (exploración), seguido de opciones adicionales de filtrado o búsqueda.
+1. Transacciones No Confirmadas (transactions)
+
+Muestra una tabla con las transacciones pendientes en la mempool. Puedes limitar la cantidad de resultados con la bandera -n.
+Bash
+
+./btcAnalyzer.sh -e transactions -n 15
+
+2. Inspeccionar Transacción (inspect)
+
+Muestra el desglose de entradas y salidas de una transacción específica. Requiere el hash de la transacción con la bandera -i.
+Bash
+
+./btcAnalyzer.sh -e inspect -i dde40023d3a5fc9eebef1064e9f5b07a5eff20ed3eb445897288c0c633119ecf
+
+3. Inspeccionar Dirección (address)
+
+Genera un estado de cuenta completo de una billetera Bitcoin, mostrando transacciones totales, balance histórico y saldo actual, tanto en BTC como en USD. Requiere la dirección con la bandera -a.
+Bash
+
+./btcAnalyzer.sh -e address -a 7bd6db0596dc7c05114a61a05b6a30ecf0441c28df4368ecda56ea6a5ea29260
+
+Autor
+
+    Cesar Lengua (aka rxshs3c)
